@@ -33,6 +33,7 @@ public class Desafio1Application implements CommandLineRunner {
 		System.out.print("Porcentagem de desconto: ");
 		Double discount = sc.nextDouble();
 		
+		
 		Order order = new Order(code, basic, discount);
 		System.out.println("Pedido codigo " + order.getCode());
 		System.out.println("Valor total: " + orderService.total(order));
